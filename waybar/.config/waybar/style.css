@@ -38,7 +38,7 @@ tooltip {
   padding-right: 5px;
 }
 
-#custom-rofi,
+#custom-wofi,
 #workspaces button,
 #workspaces button:hover,
 #workspaces button.visible,
@@ -48,8 +48,6 @@ tooltip {
 #workspaces button.urgent,
 #window,
 #tray,
-#disk,
-#cpu,
 #temperature,
 #temperature.critical,
 #backlight,
@@ -86,9 +84,7 @@ tooltip {
   margin: 5px 0px;
 }
 
-#custom-rofi {
-  /* border: 2px solid #458588; */
-  /* border-radius: 5px; */
+#custom-wofi {
   background: #151515;
   border-radius: 30px;
   padding-left: 12px;
@@ -98,6 +94,20 @@ tooltip {
   margin-left: 5px;
   margin-right: 5px;
 }
+
+
+#cpu, #memory, #disk {
+  padding-right: 4px;  /* Space between modules */
+  font-size: 14px;
+  color: #fbf1c7;
+  background: #151515;
+  border-radius: 30px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 8px;
+}
+
+
 
 /* ================================ */
 /*       workspaces module          */
@@ -115,7 +125,6 @@ tooltip {
 #workspaces button {
   color: #fff4d2;
   background: #151515;
-  /* border: 2px solid #fff4d2; */
   min-width: 25px;
   padding: 0 4px;
   margin: 0px 0px;
@@ -177,30 +186,11 @@ tooltip {
 /* ================================ */
 
 #tray {
-  /* padding: 0 6px; */
-  background: #252221;
+  padding: 0 6px;
+  background: #151515;
+  border-radius: 30px;
 }
 
-/* ================================ */
-/*            disk                 */
-/* ================================ */
-
-#disk {
-  color: #ea6962;
-  border: 2px solid #ea6962;
-}
-
-/* ================================ */
-/*            cpu                  */
-/* ================================ */
-#cpu {
-  color: #e78a4e;
-  border: 2px solid #e78a4e;
-}
-
-/* ================================ */
-/*            temp                  */
-/* ================================ */
 #temperature {
   color: #d8a657;
   border: 2px solid #d8a657;
@@ -222,10 +212,6 @@ tooltip {
 /* ================================ */
 /*            memory                */
 /* ================================ */
-#custom-memory {
-  color: #458588;
-  border: 2px solid #458588;
-}
 
 /* ================================ */
 /*         pulseaudio               */
@@ -292,7 +278,7 @@ tooltip {
   font-size: 14px;
   background: #151515;
   border-radius: 30px;
-  padding-left: 12px;
+  padding-left: 10px;
   padding-right: 6px;
   margin-top: 5px;
   margin-bottom: 5px;
